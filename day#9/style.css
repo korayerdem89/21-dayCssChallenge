@@ -98,11 +98,12 @@ h1 {
     background-color:#136C72;
     color:#F0F0F0;
     text-align:center;
-   
+   min-width:200px;
 }
 
 .aside__text {
     padding:3em 3em;
+ 
 }
  
 
