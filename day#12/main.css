@@ -142,16 +142,18 @@ h4 {
 
  @media only screen and (max-width:768px) {
     
-    container {
+    .container {
         margin:0 auto;
         min-width:425px;
     }
        .subcontainer {
       display:inherit;
-      flex-direction:column;   
+      flex-direction:column; 
+ 
     }
       .item {
           flex-grow:1;
+       
       }    
       .seconddiv_texts > * {
          width:100%;
@@ -162,6 +164,11 @@ h4 {
       #seconddiv_header {
         margin-bottom:1.5em;
         
+      }
+
+      img {
+          width:100%;
+          padding:2em 0;
       }
    
  }
