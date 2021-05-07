@@ -1,6 +1,6 @@
 :root { --beige:#F3EED9;
     --brown:#824936;
-    --dark:--#222C2A;
+    --dark:#222C2A;
     --darkred: rgb(85, 13, 13);
 
 }
@@ -32,7 +32,7 @@ h2 {
     font-weight:900;
 }
 h6 {
-    font-size:18px;
+    font-size:21px;
     margin-bottom:10px;
      font-weight:300;
     text-transform:uppercase;
@@ -45,12 +45,13 @@ h4 {
     font-size:36px;
     font-weight:900;
     margin-bottom:0.8em;
+   
 }
 .container {
     max-width:1128px;
     margin:40px auto;
     border:1px solid var(--brown);
-   
+   min-width:60%;
    
 }
 
@@ -73,35 +74,94 @@ h4 {
 
  .subcontainer {
      display:flex;
-     padding:2.5vw 3vw;
-     border:1px solid red;
+     padding:2.5vw 3vw;    
      min-height:38vh;
       font-family:'Roboto';
       max-width:100%;
+     gap:3em;
+     line-height:1.8em;
+     padding:3em 4em;
+     
  }
  .item {
-     border:1px solid red;
+    
      text-align:left;
-
+     font-size:18px;
+     font-family:'Roboto';
+     font-weight:300;
  }
 
  .seconddiv {
      flex-direction:column;
-     min-height:35vh;
-
+     
+     
+ }
+ .seconddiv_texts > * {
+ width:46%;
  }
 
  .seconddiv h4 {
     color:var(--darkred);
     text-align:center;
-    margin-bottom:1.5em;
-    border:1px solid red;
+    margin-bottom:0.2em;
     margin-inline:auto;
     
      }
 
-     .seconddiv div {
+.seconddiv div {
         display:inherit;
         justify-content:space-between;
         line-height:1.5em;
+         
+       
      }
+
+.thirddiv {
+    background-color: var(--dark);
+}
+.fourthdiv {
+    background-color: var(--brown);
+}
+ .thirddiv,
+ .fourthdiv {
+     
+         color:white;
+         
+        
+        }
+.thirddiv.item,
+.fourthdiv.item  {
+     flex: 1 2 50%;
+}
+
+.thirddiv.image,
+.fourthdiv.image {
+    flex:1 1 50%; 
+   background-color:var(--dark);
+}
+
+ @media only screen and (max-width:768px) {
+    
+    container {
+        margin:0 auto;
+        min-width:425px;
+    }
+       .subcontainer {
+      display:inherit;
+      flex-direction:column;   
+    }
+      .item {
+          flex-grow:1;
+      }    
+      .seconddiv_texts > * {
+         width:100%;
+         margin-bottom:3em;
+
+      }
+
+      #seconddiv_header {
+        margin-bottom:1.5em;
+        
+      }
+   
+ }
