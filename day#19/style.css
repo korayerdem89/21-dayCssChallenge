@@ -179,8 +179,47 @@ header {
         visibility: visible;
         display: flex;
         height: auto;
+        justify-content:space-between;
+        
+        
     }
 
+    .navset {
+        display:flex;
+        align-items:center;
+     
+   
+    }
+
+   
+
+
+    .nav__list {
+        display:flex;
+        list-style:none;
+   
+        flex:1;
+       
+    }
+
+    .nav__list--primary {
+        margin-left:3em;
+        justify-content:space-around;
+    }
+
+    .nav__list--secondary {
+        justify-content:flex-end;
+
+    }
+
+    .nav__list--secondary .nav__item:nth-child(1) {
+        margin-right:2em;
+    }
+    .nav__link {
+        text-decoration:none;
+        text-transform:none;
+        color:white;
+    }
     .row {
         display: flex;
         justify-content: space-between;
